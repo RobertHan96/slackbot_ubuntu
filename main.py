@@ -3,9 +3,9 @@ from slacker import Slacker
 from flask import Flask, request, make_response
 from selenium import webdriver
 
-from Coin import Coin, CoinInfo
-from Programmers import Programmers, ProgrammersInfo
-from Wanted import Wanted, WantedInfo
+from Coin import Coin
+from Programmers import Programmers
+from Wanted import Wanted
 
 API_KEY = 'xoxb-1212367717746-1198395599847-pgjFdold2da9j5xSvPeqFPyF'
 slack = Slacker(API_KEY)
