@@ -6,8 +6,8 @@ from selenium import webdriver
 from Coin import Coin
 from Programmers import Programmers
 from Wanted import Wanted
-
-API_KEY = 'xoxb-1212367717746-1198395599847-pgjFdold2da9j5xSvPeqFPyF'
+API_KEY = 'xoxb-1212367717746-1198395599847-AAIkHF7CgFUIsEAcPZdkDOLv'
+# 이전 봇 토큰키 'xoxb-1212367717746-1198395599847-pgjFdold2da9j5xSvPeqFPyF'
 slack = Slacker(API_KEY)
 
 app = Flask(__name__)
@@ -59,4 +59,4 @@ def event_handler(event_type, slack_event):
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
