@@ -5,7 +5,9 @@ import time
 
 display = Display(visible=0, size=(1024, 768))
 display.start()
-path = '/home/ubuntu/chromedriver'
+# path = '/home/ubuntu/chromedriver'
+path = '/Users/mac/0_Dev/PythonProjects/get_coin/chromedriver'
+
 driver = webdriver.Chrome(path)
 url = 'https://www.wanted.co.kr/wdlist/518/678?country=kr&job_sort=job.latest_order&years=0&locations=all'
 driver.get(url)

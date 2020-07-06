@@ -29,7 +29,7 @@ response_text = '프로그래머스에서 찾은 {}개의 개발자 채용정보
 for job in programmers_jobs:
     response_text = response_text + '\n{} / {} / {}\n{}\n{}'.format(
         job.name, job.position_name, job.min_career, job.location, job.url)
-    
+
 print(response_text)
 driver.quit()
 
